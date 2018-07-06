@@ -2,8 +2,9 @@ require 'rails_helper'
 
 describe 'user index' do
   it 'user can see all songs' do
-    song1 = Song.create(title: "Don't Stop Believin", length: 303, play_count: 123456)
-    song2 = Song.create(title: "Threshold", length: 253, play_count: 9876234)
+    artist = Artist.create!(name: "Adele")
+    song1 = artist.songs.create(title: "Don't Stop Believin", length: 303, play_count: 123456)
+    song2 = artist.songs.create(title: "Threshold", length: 253, play_count: 9876234)
 
     visit '/songs'
 
