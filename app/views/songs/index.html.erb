@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> All Songs </h1>
+    <% @songs.each do |song| %>
+    <p><%= song.title %></p>
+    <p>Plays: <%= song.play_count %></p>
+    <% end %>
+  </body>
+</html>
