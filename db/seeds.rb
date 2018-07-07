@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+artist = Artist.create(name: 'slayer')
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)
+artist.songs.create(title: "catalyst", length: 208, play_count: 78900)

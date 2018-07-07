@@ -2,13 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Shrikhand" rel="stylesheet">
     <title></title>
   </head>
   <body>
-    <h1> All Songs </h1>
-    <% @songs.each do |song| %>
-    <p><%= song.title %></p>
-    <p>Plays: <%= song.play_count %></p>
-    <% end %>
+    <header class="head">
+      <div>Songs</div>
+    </header>
+    <section class="middle">
+      <% @songs.each do |song| %>
+      <article class="song-box">
+        <img class="photo" src="http://www.deathmetal.org/wp-content/uploads/tom-araya-laughing.jpg" alt="araya">
+        <div class="space"><%= song.title %></div>
+        <div class="space">Plays: <%= song.play_count %></div>
+      </article>
+      <% end %>
+    </section>
   </body>
 </html>
