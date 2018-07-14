@@ -1,0 +1,68 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.imgur.com/usnR4vQ.jpg');
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+.whole-page {
+  font-family: 'Poiret One', cursive;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+#new-song {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-style {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text {
+  width: 220px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.labels {
+  font-size: 30px;
+}
+
+.button {
+  width: 220px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: rgb(19, 58, 144);
+  color: white;
+  font-size: 20px;
+}

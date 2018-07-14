@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  </head>
+  <body class="whole-page">
+    <%= form_for [@artist, @song], html: {id: 'new-song'} do |f| %>
+      <h2 class="item-style">Create A New Song</h2>
+        <%= f.label :title, class: 'item-style labels'%>
+        <%= f.text_field :title, class: 'item-style text'%>
+        <%= f.label :length, class: 'item-style labels'%>
+        <%= f.text_field :length, class: 'item-style text' %>
+        <%= f.label :play_count, class: 'item-style labels' %>
+        <%= f.text_field :play_count, class: 'item-style text' %>
+      <%= f.submit class: 'item-style button' %>
+    <% end %>
+  </body>
+</html>
