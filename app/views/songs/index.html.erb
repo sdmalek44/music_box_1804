@@ -8,12 +8,12 @@
   </head>
   <body>
     <header class="head">
-      <div>Songs</div>
+      <div>All Songs</div>
     </header>
     <section class="middle">
       <% @songs.each do |song| %>
       <article class="song-box">
-        <img class="photo" src="http://www.deathmetal.org/wp-content/uploads/tom-araya-laughing.jpg" alt="araya">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/14-06-08_RiP_Slayer_Tom_Araya_2.JPG/220px-14-06-08_RiP_Slayer_Tom_Araya_2.JPG" alt="araya">
         <div class="space"><%= song.title %></div>
         <div class="space">Plays: <%= song.play_count %></div>
       </article>
