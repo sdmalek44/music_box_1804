@@ -32,6 +32,6 @@ describe 'user visits /' do
     expect(current_path).to eq(user_path(user))
 
     expect(page).to have_content("Welcome, #{user.username}")
-    expect(page).to have_content("Log out")
+    expect(page).to have_content("Log Out")
   end
 end
