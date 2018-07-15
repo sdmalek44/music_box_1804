@@ -9,6 +9,8 @@
   </head>
 
   <body>
+    <%= render partial: 'nav/login-bar' unless params[:controller] == 'sessions' && params[:action] == 'new'%>
+    <%= render partial: 'nav/blank-nav' if params[:controller] == 'sessions' && params[:action] == 'new'%>
     <%= yield %>
   </body>
 </html>
